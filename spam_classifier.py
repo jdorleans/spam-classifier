@@ -11,6 +11,7 @@ def run():
     normalize(x_train)
     normalize(x_test)
 
+    # Because of the simplicity of this problem a Sequential DNN is good enough.
     # After a few calibrations tests the ideal architecture was:
     # 3 hidden layers with 50 neurons each and ReLu activation with 0.3 dropout
     # Varying those params either does not make much difference or decrease accuracy
